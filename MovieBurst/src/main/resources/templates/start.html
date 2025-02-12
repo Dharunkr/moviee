@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Time</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+<img src="/images/—Pngtree—cinema element_1000887.png" alt="Play Icon" class="top-pic">
+    <div class="login-container">
+        
+        <h2>MOVIE TIME!!</h2>
+        <form th:action="@{/search}" method="get">
+        <div class="input-group">
+            <input type="text" name="mood" placeholder="Type your mood" required>
+        </div>
+       
+        <button  type="submit" class="btn btn-primary btn-sm"> 
+SEARCH MOVIES
+</button>
+</form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/pexels-tima-miroshnichenko-7991437.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styling */
+.login-container {
+    background-color: rgba(255, 255, 225, 0.19); /* Translucent and transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    position: relative;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Input field styling */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 16px;
+}
+
+.input-group input::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.input-group input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.8s, color 0.8s;
+    box-shadow: 0 0 10px black;
+}
+
+button:hover {
+    background-color: #e22446; /* Neon purple */
+    color: white;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Top GIF styling */
+.top-pic {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 260px;
+    margin-top: 70px;
+}
+
+/* Bottom GIF styling */
+.bottom-gif {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+/* Optional media query for responsiveness */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+    }
+}
